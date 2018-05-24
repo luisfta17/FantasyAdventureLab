@@ -2,7 +2,7 @@ package fantasy.items.potion;
 
 import fantasy.items.Item;
 
-public abstract class Potion extends Item{
+public class Potion extends Item{
 
     private int hpRecovery;
     private int mpRecovery;

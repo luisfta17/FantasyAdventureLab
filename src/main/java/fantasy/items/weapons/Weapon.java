@@ -2,7 +2,7 @@ package fantasy.items.weapons;
 
 import fantasy.items.Item;
 
-public abstract class Weapon extends Item {
+public class Weapon extends Item {
 
     private int attackPower;
     private int healingPower;
