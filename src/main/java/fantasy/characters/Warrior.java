@@ -2,15 +2,17 @@ package fantasy.characters;
 
 import fantasy.items.potion.Potion;
 import fantasy.items.weapons.Shield;
+import fantasy.items.weapons.Weapon;
 
 public  abstract class Warrior extends Character {
     private int mp;
     private Shield shield;
+    private int defensePoints;
 
-    public Warrior(String name, int hp, int mp){
-        super(name, hp);
+    public Warrior(String name, int hp, int mp, Weapon weapon, Shield shield){
+        super(name, hp, weapon, shield.getDefensePower());
         this.mp = mp;
-        this.shield = null;
+        this.shield = shield;
     }
 
     public int getMp() {
@@ -34,12 +36,12 @@ public  abstract class Warrior extends Character {
     }
 
     public void basicAttack(Character character){
-        character.reciveDamage(this.weapon.getAttackPower());
+        character.reciveDamage(this.attackPower);
     }
 
     public void megaStrike(Character character){
         if( this.mp >= 50 ){
-            character.reciveDamage(this.weapon.getAttackPower() * 2);
+            character.reciveDamage(this.attackPower * 2);
             this.reduceMp(50);
         }
 

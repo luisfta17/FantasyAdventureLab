@@ -12,13 +12,18 @@ public abstract class Character {
     protected int hp;
     protected ArrayList<Item> inventory;
     protected Weapon weapon;
+    protected int attackPower;
+    protected int defensePoints;
 
 
-    public Character(String name, int hp){
+    public Character(String name, int hp, Weapon weapon, int defensePoints){
         this.name = name;
         this.hp = hp;
         this.inventory = new ArrayList<>();
-        this.weapon = null;
+        this.weapon = weapon;
+        this.attackPower = weapon.getAttackPower();
+        this.defensePoints = defensePoints;
+
     }
 
     public String getName() {
@@ -53,7 +58,11 @@ public abstract class Character {
     }
 
     public void reciveDamage(int damage){
-        this.hp -= damage;
+        if (damage > this.defensePoints){
+            int total = damage - this.defensePoints;
+            this.hp -= total;
+        }
+        
     }
 
 //        for (int i = 0; i < treasure.getItems().size(); i++){
