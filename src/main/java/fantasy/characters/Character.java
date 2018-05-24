@@ -5,14 +5,13 @@ import fantasy.items.treasures.Treasure;
 import fantasy.items.weapons.Weapon;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public abstract class Character {
 
-    private String name;
-    private int hp;
-    private ArrayList<Item> inventory;
-    private Weapon weapon;
+    protected String name;
+    protected int hp;
+    protected ArrayList<Item> inventory;
+    protected Weapon weapon;
 
 
     public Character(String name, int hp){
@@ -52,11 +51,22 @@ public abstract class Character {
         }
         treasure.removeAllItemsFromTreasure();
     }
+
+    public void reciveDamage(int damage){
+        this.hp -= damage;
+    }
+
 //        for (int i = 0; i < treasure.getItems().size(); i++){
 //            Item item = treasure.getItems().get(i);
 //            this.addItem(item);
 //        }
 //        treasure.removeAllItemsFromTreasure();
 //    }
+
+
+
+
+
+
 }
 
