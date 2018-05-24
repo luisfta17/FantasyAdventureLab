@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d23b855e-e5fb-4f4b-8e2e-f83aba5eb2f6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/fantasy/characters/Character.java" afterPath="$PROJECT_DIR$/src/main/java/fantasy/characters/Character.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fantasy/characters/Warrior.java" afterPath="$PROJECT_DIR$/src/main/java/fantasy/characters/Warrior.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fantasy/Arena.java" afterPath="$PROJECT_DIR$/src/main/java/fantasy/Arena.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -72,24 +71,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShieldTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ShieldTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#300#301#0" expanded="true" />
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TreasureTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TreasureTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,7 +88,7 @@
       <file leaf-file-name="Character.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fantasy/characters/Character.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
+            <state relative-caret-position="569">
               <caret line="100" column="20" lean-forward="false" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -172,11 +153,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BarbarianTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BarbarianTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BarbarianTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="113" column="52" lean-forward="false" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
+            <state relative-caret-position="448">
+              <caret line="90" column="6" lean-forward="false" selection-start-line="90" selection-start-column="6" selection-end-line="91" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1158#1159#0" expanded="true" />
@@ -196,21 +177,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PotionTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PotionTest.java">
+      <file leaf-file-name="Arena.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fantasy/Arena.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="5" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="330">
+              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#215#216#0" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArenaTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ArenaTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="57" column="51" lean-forward="false" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -544,6 +529,8 @@
         <option value="$PROJECT_DIR$/src/main/java/fantasy/characters/Warrior.java" />
         <option value="$PROJECT_DIR$/src/main/java/fantasy/characters/Character.java" />
         <option value="$PROJECT_DIR$/src/test/java/BarbarianTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fantasy/Arena.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ArenaTest.java" />
       </list>
     </option>
   </component>
@@ -687,7 +674,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in FantasyAdventureLab_test">
+  <component name="RunManager" selected="JUnit.ArenaTest.haveWinner2">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -729,6 +716,66 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="ArenaTest.haveNoWinner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FantasyAdventureLab_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArenaTest" />
+      <option name="METHOD_NAME" value="haveNoWinner" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ArenaTest.haveWinner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FantasyAdventureLab_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArenaTest" />
+      <option name="METHOD_NAME" value="haveWinner" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ArenaTest.haveWinner2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FantasyAdventureLab_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArenaTest" />
+      <option name="METHOD_NAME" value="haveWinner2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="BarbarianTest.canChangeWeapon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FantasyAdventureLab_test" />
@@ -737,66 +784,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BarbarianTest" />
       <option name="METHOD_NAME" value="canChangeWeapon" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="BarbarianTest.canCollectTreasure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="FantasyAdventureLab_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BarbarianTest" />
-      <option name="METHOD_NAME" value="canCollectTreasure" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="BarbarianTest.canDie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="FantasyAdventureLab_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BarbarianTest" />
-      <option name="METHOD_NAME" value="canDie" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="BarbarianTest.canDrinkPotion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="FantasyAdventureLab_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BarbarianTest" />
-      <option name="METHOD_NAME" value="canDrinkPotion" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -871,18 +858,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in FantasyAdventureLab_test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BarbarianTest.canDie" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BarbarianTest.canDrinkPotion" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BarbarianTest.canCollectTreasure" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BarbarianTest.canChangeWeapon" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BarbarianTest.canChangeWeapon" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ArenaTest.haveWinner" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ArenaTest.haveWinner2" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ArenaTest.haveNoWinner" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in FantasyAdventureLab_test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BarbarianTest.canChangeWeapon" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BarbarianTest.canCollectTreasure" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BarbarianTest.canDrinkPotion" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BarbarianTest.canDie" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ArenaTest.haveWinner2" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in FantasyAdventureLab_test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ArenaTest.haveNoWinner" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ArenaTest.haveWinner" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BarbarianTest.canChangeWeapon" />
       </list>
     </recent_temporary>
   </component>
@@ -903,35 +890,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_FantasyAdventureLab_test - 2018.05.24 at 13h 51m 14s.xml">
+    <history-entry file="All_in_FantasyAdventureLab_test - 2018.05.24 at 14h 20m 00s.xml">
       <configuration name="All in FantasyAdventureLab_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_FantasyAdventureLab_test - 2018.05.24 at 13h 53m 50s.xml">
-      <configuration name="All in FantasyAdventureLab_test" configurationId="JUnit" />
+    <history-entry file="ArenaTest_haveNoWinner - 2018.05.24 at 14h 15m 09s.xml">
+      <configuration name="ArenaTest.haveNoWinner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BarbarianTest_canChangeWeapon - 2018.05.24 at 13h 52m 47s.xml">
-      <configuration name="BarbarianTest.canChangeWeapon" configurationId="JUnit" />
+    <history-entry file="ArenaTest_haveNoWinner - 2018.05.24 at 14h 19m 38s.xml">
+      <configuration name="ArenaTest.haveNoWinner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BarbarianTest_canCollectTreasure - 2018.05.24 at 13h 49m 40s.xml">
-      <configuration name="BarbarianTest.canCollectTreasure" configurationId="JUnit" />
+    <history-entry file="ArenaTest_haveNoWinner - 2018.05.24 at 14h 19m 50s.xml">
+      <configuration name="ArenaTest.haveNoWinner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BarbarianTest_canCollectTreasure - 2018.05.24 at 13h 49m 57s.xml">
-      <configuration name="BarbarianTest.canCollectTreasure" configurationId="JUnit" />
+    <history-entry file="ArenaTest_haveNoWinner - 2018.05.24 at 14h 19m 54s.xml">
+      <configuration name="ArenaTest.haveNoWinner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BarbarianTest_canCollectTreasure - 2018.05.24 at 13h 50m 11s.xml">
-      <configuration name="BarbarianTest.canCollectTreasure" configurationId="JUnit" />
+    <history-entry file="ArenaTest_haveWinner2 - 2018.05.24 at 14h 12m 59s.xml">
+      <configuration name="ArenaTest.haveWinner2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BarbarianTest_canCollectTreasure - 2018.05.24 at 13h 50m 31s.xml">
-      <configuration name="BarbarianTest.canCollectTreasure" configurationId="JUnit" />
+    <history-entry file="ArenaTest_haveWinner2 - 2018.05.24 at 14h 13m 22s.xml">
+      <configuration name="ArenaTest.haveWinner2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BarbarianTest_canDie - 2018.05.24 at 13h 42m 13s.xml">
-      <configuration name="BarbarianTest.canDie" configurationId="JUnit" />
+    <history-entry file="ArenaTest_haveWinner2 - 2018.05.24 at 14h 14m 21s.xml">
+      <configuration name="ArenaTest.haveWinner2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BarbarianTest_canDie - 2018.05.24 at 13h 43m 42s.xml">
-      <configuration name="BarbarianTest.canDie" configurationId="JUnit" />
+    <history-entry file="ArenaTest_haveWinner2 - 2018.05.24 at 14h 14m 34s.xml">
+      <configuration name="ArenaTest.haveWinner2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BarbarianTest_canDrinkPotion - 2018.05.24 at 13h 47m 28s.xml">
-      <configuration name="BarbarianTest.canDrinkPotion" configurationId="JUnit" />
+    <history-entry file="ArenaTest_haveWinner2 - 2018.05.24 at 14h 20m 53s.xml">
+      <configuration name="ArenaTest.haveWinner2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -940,13 +927,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23866667" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23866667" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1003,7 +990,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1178,13 +1165,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fantasy/Arena.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fantasy/items/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1348,7 +1328,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fantasy/characters/Character.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
+        <state relative-caret-position="569">
           <caret line="100" column="20" lean-forward="false" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1382,10 +1362,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fantasy/Arena.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BarbarianTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="113" column="52" lean-forward="false" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
+        <state relative-caret-position="448">
+          <caret line="90" column="6" lean-forward="false" selection-start-line="90" selection-start-column="6" selection-end-line="91" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1158#1159#0" expanded="true" />
@@ -1400,6 +1390,16 @@
             <element signature="e#1609#1610#0" expanded="true" />
             <element signature="e#1652#1653#0" expanded="true" />
             <element signature="e#1717#1718#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ArenaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="57" column="51" lean-forward="false" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
