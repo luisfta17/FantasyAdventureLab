@@ -1,6 +1,7 @@
 package fantasy.characters;
 
 import fantasy.items.Item;
+import fantasy.items.potion.Potion;
 import fantasy.items.treasures.Treasure;
 import fantasy.items.weapons.Weapon;
 
@@ -10,15 +11,17 @@ public abstract class Character {
 
     protected String name;
     protected int hp;
+    protected int mp;
     protected ArrayList<Item> inventory;
     protected Weapon weapon;
     protected int attackPower;
     protected int defensePoints;
 
 
-    public Character(String name, int hp, Weapon weapon, int defensePoints){
+    public Character(String name, int hp, int mp, Weapon weapon, int defensePoints){
         this.name = name;
         this.hp = hp;
+        this.mp = mp;
         this.inventory = new ArrayList<>();
         this.weapon = weapon;
         this.attackPower = weapon.getAttackPower();
@@ -36,6 +39,14 @@ public abstract class Character {
 
     public int getHp() {
         return this.hp;
+    }
+
+    public int getMp() {
+        return this.mp;
+    }
+
+    public void reduceMp(int reduce) {
+        this.mp -= reduce;
     }
 
     public void setWeapon(Weapon weapon) {
@@ -62,7 +73,16 @@ public abstract class Character {
             int total = damage - this.defensePoints;
             this.hp -= total;
         }
-        
+
+    }
+
+    public void drinkPotion(Potion potion){
+        this.hp += potion.getHpRecovery();
+        this.mp += potion.getMpRecovery();
+    }
+
+    public void basicAttack(Character character){
+        character.reciveDamage(this.attackPower);
     }
 
 //        for (int i = 0; i < treasure.getItems().size(); i++){
