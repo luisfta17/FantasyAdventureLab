@@ -4,7 +4,7 @@ import fantasy.items.weapons.Shield;
 import fantasy.items.weapons.Weapon;
 
 public  abstract class Warrior extends Character {
-    private int mp;
+
     private Shield shield;
     private int defensePoints;
 
@@ -21,8 +21,9 @@ public  abstract class Warrior extends Character {
     }
 
     public void megaStrike(Character character){
-        if( this.mp >= 50 ){
-            character.reciveDamage(this.attackPower * 2);
+        if( getMp() >= 50 ){
+            int total = this.getAttackPower() * 2;
+            character.reciveDamage(total);
             this.reduceMp(50);
         }
 

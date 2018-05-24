@@ -85,6 +85,22 @@ public abstract class Character {
         character.reciveDamage(this.attackPower);
     }
 
+    public boolean isAlive(){
+        return this.getHp() > 0;
+    }
+
+    public int getAttackPower() {
+        return this.attackPower;
+    }
+
+    public int getDefensePower() {
+        return this.defensePoints;
+    }
+
+    public Weapon getWeapon() {
+        return this.weapon;
+    }
+
 //        for (int i = 0; i < treasure.getItems().size(); i++){
 //            Item item = treasure.getItems().get(i);
 //            this.addItem(item);
