@@ -11,7 +11,7 @@ public class PotionTest {
 
     @Before
     public void before(){
-        potion = new Potion("Green Potion", 50, 50);
+        potion = new Potion("Green Potion", 50, 50, 0, 0);
     }
 
     @Test
@@ -27,5 +27,15 @@ public class PotionTest {
     @Test
     public void hasMPRecovery(){
         assertEquals(50, potion.getHpRecovery());
+    }
+
+    @Test
+    public void hasAttackPower(){
+        assertEquals(0, potion.getAttackPower());
+    }
+
+    @Test
+    public void hasDefensePoints(){
+        assertEquals(0, potion.getDefensePoints());
     }
 }

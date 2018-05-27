@@ -28,8 +28,8 @@ public class ArenaTest {
         barbarian1 = new Barbarian("Hannah", 100, 70,  weapon, shield);
         barbarian2 = new Barbarian("Luis", 100, 70,  weapon2, shield);
         item1 = new Weapon("Axe", 10, 0);
-        item2 = new Potion("HP pot", 100, 0);
-        potion = new Potion("HP pot", 100, 0);
+        item2 = new Potion("HP pot", 100, 0, 0, 0);
+        potion = new Potion("HP pot", 100, 0, 0, 0);
         treasure = new Treasure();
         treasure.addItemToTreasure(item1);
         treasure.addItemToTreasure(item2);

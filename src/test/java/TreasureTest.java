@@ -14,7 +14,7 @@ public class TreasureTest {
     @Before
     public void before(){
         item1 = new Weapon("Axe", 10, 0);
-        item2 = new Potion("HP pot", 100, 0);
+        item2 = new Potion("HP pot", 100, 0, 0, 0);
         treasure = new Treasure();
     }
 

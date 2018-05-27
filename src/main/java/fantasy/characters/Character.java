@@ -79,6 +79,8 @@ public abstract class Character {
     public void drinkPotion(Potion potion){
         this.hp += potion.getHpRecovery();
         this.mp += potion.getMpRecovery();
+        this.attackPower += potion.getAttackPower();
+        this.defensePoints += potion.getDefensePoints();
     }
 
     public void basicAttack(Character character){

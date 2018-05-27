@@ -35,8 +35,8 @@ public class WizardTest {
             barbarian2 = new Barbarian("Luis", 100, 70,  weapon2, shield);
             wizard1 = new Wizard("Finn", 80, 150, weapon3, pet);
             item1 = new Weapon("Axe", 10, 0);
-            item2 = new Potion("HP pot", 100, 0);
-            potion = new Potion("HP pot", 100, 0);
+            item2 = new Potion("HP pot", 100, 0, 0, 0);
+            potion = new Potion("HP pot", 100, 0, 0, 0);
             treasure = new Treasure();
             treasure.addItemToTreasure(item1);
             treasure.addItemToTreasure(item2);
