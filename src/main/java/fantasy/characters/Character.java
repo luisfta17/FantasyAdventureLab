@@ -12,16 +12,20 @@ public abstract class Character {
     protected String name;
     protected int hp;
     protected int mp;
+    protected int maxHp;
+    protected int maxMp;
     protected ArrayList<Item> inventory;
     protected Weapon weapon;
     protected int attackPower;
     protected int defensePoints;
 
 
-    public Character(String name, int hp, int mp, Weapon weapon, int defensePoints){
+    public Character(String name, int maxHp, int maxMp, Weapon weapon, int defensePoints){
         this.name = name;
-        this.hp = hp;
-        this.mp = mp;
+        this.maxHp = maxHp;
+        this.maxMp = maxMp;
+        this.hp = maxHp;
+        this.mp = maxMp;
         this.inventory = new ArrayList<>();
         this.weapon = weapon;
         this.attackPower = weapon.getAttackPower();
@@ -44,6 +48,15 @@ public abstract class Character {
     public int getMp() {
         return this.mp;
     }
+
+    public int getMaxHp(){
+        return this.maxHp;
+    }
+
+    public int getMaxMp() {
+        return this.maxMp;
+    }
+
 
     public void reduceMp(int reduce) {
         this.mp -= reduce;
@@ -76,7 +89,7 @@ public abstract class Character {
         if (damage >= this.defenseFormula()){
             int total = damage - this.defenseFormula();
             this.hp -= total;
-            if (this.hp < 0){
+            if (!this.isAlive()){
                 this.hp = 0;
             }
         }
@@ -84,9 +97,23 @@ public abstract class Character {
 
     }
 
+    public boolean overHealed(){
+        return this.hp > this.maxHp;
+    }
+
+    public boolean overMP(){
+        return this.mp > this.maxMp;
+    }
+
     public void drinkPotion(Potion potion){
         this.hp += potion.getHpRecovery();
+        if (this.overHealed()){
+            this.hp = maxHp;
+        }
         this.mp += potion.getMpRecovery();
+        if (this.overMP()){
+            this.mp = maxMp;
+        }
         this.attackPower += potion.getAttackPower();
         this.defensePoints += potion.getDefensePoints();
     }

@@ -15,7 +15,7 @@ public class BarbarianTest {
     Weapon weapon, weapon2;
     Treasure treasure;
     Item item1, item2;
-    Potion potion;
+    Potion potion, potion2;
 
     @Before
     public void before(){
@@ -28,6 +28,7 @@ public class BarbarianTest {
         item1 = new Weapon("Axe", 10, 0);
         item2 = new Potion("HP pot", 100, 0, 0, 0);
         potion = new Potion("HP pot", 100, 0, 0, 0);
+        potion2 = new Potion("MP pot", 0, 100, 0, 0);
         treasure = new Treasure();
         treasure.addItemToTreasure(item1);
         treasure.addItemToTreasure(item2);
@@ -104,7 +105,7 @@ public class BarbarianTest {
         barbarian1.megaStrike(barbarian2);
         assertEquals(20, barbarian2.getHp());
         barbarian2.drinkPotion(potion);
-        assertEquals(120, barbarian2.getHp());
+        assertEquals(100, barbarian2.getHp());
 
     }
 
@@ -119,11 +120,23 @@ public class BarbarianTest {
         assertEquals(shield2, barbarian2.getShield());
     }
     @Test
-    public void lifeCantGoBelowCero(){
+    public void lifeCantGoBelowZero(){
         barbarian1.megaStrike(barbarian2);
         barbarian1.basicAttack(barbarian2);
         barbarian1.basicAttack(barbarian2);
         assertEquals(0, barbarian2.getHp());
+    }
+
+    @Test
+    public void canNotOverHeal(){
+        barbarian1.drinkPotion(potion);
+        assertEquals(100, barbarian1.getHp());
+    }
+
+    @Test
+    public void canNotOverMp(){
+        barbarian1.drinkPotion(potion2);
+        assertEquals(70, barbarian1.getMp());
     }
 
 
