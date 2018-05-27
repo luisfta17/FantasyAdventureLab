@@ -8,7 +8,7 @@ public  abstract class Warrior extends Character {
     private Shield shield;
 
     public Warrior(String name, int hp, int mp, Weapon weapon, Shield shield){
-        super(name, hp, mp, weapon, shield.getDefensePower());
+        super(name, hp, mp, weapon, shield.getDefensePower(), 0);
         this.shield = shield;
     }
 

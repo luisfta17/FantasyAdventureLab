@@ -18,9 +18,10 @@ public abstract class Character {
     protected Weapon weapon;
     protected int attackPower;
     protected int defensePoints;
+    protected int healingPoints;
 
 
-    public Character(String name, int maxHp, int maxMp, Weapon weapon, int defensePoints){
+    public Character(String name, int maxHp, int maxMp, Weapon weapon, int defensePoints, int healingPoints){
         this.name = name;
         this.maxHp = maxHp;
         this.maxMp = maxMp;
@@ -30,6 +31,7 @@ public abstract class Character {
         this.weapon = weapon;
         this.attackPower = weapon.getAttackPower();
         this.defensePoints = defensePoints;
+        this.healingPoints = healingPoints;
 
     }
 
@@ -57,9 +59,28 @@ public abstract class Character {
         return this.maxMp;
     }
 
+    public int getHealingPoints(){
+        return this.healingPoints;
+    }
+
 
     public void reduceMp(int reduce) {
         this.mp -= reduce;
+    }
+
+    public void healMp(int amount) {
+        this.mp += amount;
+        if (this.overMP()){
+            this.mp = maxMp;
+        }
+
+    }
+
+    public void healHp(int amount) {
+        this.hp += amount;
+        if (this.overHealed()){
+            this.hp = maxHp;
+        }
     }
 
     public void setWeapon(Weapon weapon) {
@@ -98,22 +119,16 @@ public abstract class Character {
     }
 
     public boolean overHealed(){
-        return this.hp > this.maxHp;
+        return this.hp > this.getMaxHp();
     }
 
     public boolean overMP(){
-        return this.mp > this.maxMp;
+        return this.mp > this.getMaxMp();
     }
 
     public void drinkPotion(Potion potion){
-        this.hp += potion.getHpRecovery();
-        if (this.overHealed()){
-            this.hp = maxHp;
-        }
-        this.mp += potion.getMpRecovery();
-        if (this.overMP()){
-            this.mp = maxMp;
-        }
+        this.healMp(potion.getMpRecovery());
+        this.healHp(potion.getHpRecovery());
         this.attackPower += potion.getAttackPower();
         this.defensePoints += potion.getDefensePoints();
     }

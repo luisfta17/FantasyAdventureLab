@@ -6,7 +6,7 @@ public  abstract class Magician extends Character {
     private Pet pet;
 
     public Magician(String name, int hp, int mp, Weapon weapon, Pet pet){
-        super(name, hp, mp, weapon, 0);
+        super(name, hp, mp, weapon, 0, 0);
         this.pet = pet;
     }
 
