@@ -25,7 +25,7 @@ public class WizardTest {
 
         @Before
         public void before(){
-            pet = new Unicorn(10);
+            pet = new Unicorn(20);
             shield = new Shield("Trinity", 20);
             shield2 = new Shield("Trinity2", 220);
             weapon = new Weapon("Axe", 45, 0);
@@ -82,14 +82,15 @@ public class WizardTest {
     @Test
     public void canBasicAttack(){
         wizard1.basicAttack(barbarian2);
-        assertEquals(70, barbarian2.getHp());
+        assertEquals(50, barbarian2.getHp());
 
     }
     @Test
     public void canLightingStrike(){
         wizard1.lightingStrike(barbarian2);
         assertEquals(100, wizard1.getMp());
-        assertEquals(20, barbarian2.getHp());
+        assertEquals(0, barbarian2.getHp());
+        assertEquals(false, barbarian2.isAlive());
 
     }
 

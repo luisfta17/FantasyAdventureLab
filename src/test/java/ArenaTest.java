@@ -43,7 +43,7 @@ public class ArenaTest {
         barbarian1.basicAttack(barbarian2);
         arena.checkWinner();
         assertEquals(2, barbarian1.getInventory().size());
-        assertEquals(-20, barbarian2.getHp());
+        assertEquals(0, barbarian2.getHp());
         assertEquals(0, barbarian2.getInventory().size());
     }
 
@@ -61,7 +61,6 @@ public class ArenaTest {
     @Test
     public void haveNoWinner(){
         barbarian1.megaStrike(barbarian2);
-        barbarian1.basicAttack(barbarian2);
         arena.checkWinner();
         assertEquals(0, barbarian1.getInventory().size());
         assertEquals(0, barbarian2.getInventory().size());

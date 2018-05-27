@@ -71,35 +71,40 @@ public class BarbarianTest {
     }
 
     @Test
+    public void hasDefenseFormula(){
+        assertEquals(10, barbarian2.defenseFormula());
+
+    }
+    @Test
     public void canBasicAttack(){
         barbarian1.basicAttack(barbarian2);
-        assertEquals(75, barbarian2.getHp());
+        assertEquals(65, barbarian2.getHp());
 
     }
     @Test
     public void canMegaStrike(){
         barbarian1.megaStrike(barbarian2);
         assertEquals(20, barbarian1.getMp());
-        assertEquals(30, barbarian2.getHp());
+        assertEquals(20, barbarian2.getHp());
 
     }
     @Test
     public void canDie(){
         barbarian1.megaStrike(barbarian2);
         assertEquals(true, barbarian2.isAlive());
-        assertEquals(30, barbarian2.getHp());
+        assertEquals(20, barbarian2.getHp());
         barbarian1.basicAttack(barbarian2);
         barbarian1.basicAttack(barbarian2);
         assertEquals(false, barbarian2.isAlive());
-        assertEquals(-20, barbarian2.getHp());
+        assertEquals(0, barbarian2.getHp());
     }
 
     @Test
     public void canDrinkPotion(){
         barbarian1.megaStrike(barbarian2);
-        assertEquals(30, barbarian2.getHp());
+        assertEquals(20, barbarian2.getHp());
         barbarian2.drinkPotion(potion);
-        assertEquals(130, barbarian2.getHp());
+        assertEquals(120, barbarian2.getHp());
 
     }
 
@@ -112,6 +117,13 @@ public class BarbarianTest {
     public void canChangeShield(){
         barbarian2.setShield(shield2);
         assertEquals(shield2, barbarian2.getShield());
+    }
+    @Test
+    public void lifeCantGoBelowCero(){
+        barbarian1.megaStrike(barbarian2);
+        barbarian1.basicAttack(barbarian2);
+        barbarian1.basicAttack(barbarian2);
+        assertEquals(0, barbarian2.getHp());
     }
 
 

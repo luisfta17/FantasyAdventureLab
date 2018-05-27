@@ -68,11 +68,19 @@ public abstract class Character {
         treasure.removeAllItemsFromTreasure();
     }
 
+    public int defenseFormula(){
+        return this.defensePoints / 2;
+    }
+
     public void reciveDamage(int damage){
-        if (damage > this.defensePoints){
-            int total = damage - this.defensePoints;
+        if (damage >= this.defenseFormula()){
+            int total = damage - this.defenseFormula();
             this.hp -= total;
+            if (this.hp < 0){
+                this.hp = 0;
+            }
         }
+
 
     }
 
